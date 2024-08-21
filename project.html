@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--controllare su gitHUb le differenze di codice-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+</head>
+<body>
+     
+<div id="stati">
+    <p>Real estate status: <span id="houses">on/off</span></p>
+    <p>Company status: <span id="inc">on/off</span></p>
+    <p>University status: <span id="uni">on/off</span></p>
+</div>
+
+<div id="supremo">
+    <b>Select your age: <span id="modify">0</span> years old</b>
+
+    <button class="yellow" onclick="
+        anni('plusOne');
+    ">+1</button>
+    
+    <button class="yellow" onclick="
+        anni('plusThree');
+    ">+3</button>
+    
+    <button class="yellow" onclick="
+        anni('plusFive');
+    ">+5</button>
+    
+    <br><br>
+    
+    <b>Company <span id="yesNo">is/isn't</span> free</b>
+    
+    <button class="green" onclick="
+        stato('free');
+    ">Yes, it is</button>
+
+    <button class="red" onclick="
+        stato('occuped');
+    ">No, it isn't</button>
+
+    <br><br>
+
+    <b><span id="so">Y</span>ou <span id="possession">have/haven't</span> all the company</b><!--Ho scritto la Y nello span cosi nel caso si aggiunge del testo prima non rimane la magliuscola ma viene sostituita con la varialbile allora-->
+
+    <button class="green" onclick="
+        percentuale('hundred');
+    ">Yes, I have</button>
+    
+    <button class="red" onclick="
+        percentuale('zero');
+    ">No, I haven't yet</button>
+
+    <br><br>
+
+    <b id="question"></b><p id="doneOrNot"></p>
+    <button class="green" onclick="
+    funziona('yes');
+    ">Yes, it worked</button>
+
+    <button class="red" onclick="
+    funziona('no');
+    ">No, it didn't work</button>
+
+    <br><br>
+
+    <b><span id="quindi">Y</span>ou <span id="possibility">can/can't</span> do university outside Italy.</b>
+
+</div>
+    
+</body>
+</html>
